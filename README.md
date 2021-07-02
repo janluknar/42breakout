@@ -1,7 +1,7 @@
 # 42breakout
 A simple NodeJS app that lets you play breakout after authenticating with the 42 API.
 
-# USAGE
+# Usage
 
 ```shell
 cd src
