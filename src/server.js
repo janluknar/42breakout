@@ -50,7 +50,7 @@ app.get('/request', async function (req, res) {
    		res.render(path.join(__dirname + '/breakout.ejs'), {me: response.data, req_ret: ''});
    	  })
    	  .catch(function (error) { 
-   		  	res.render(path.join(__dirname + '/index.ejs'), {me: 'Bad request.', req_ret: ''});
+   		  	res.render(path.join(__dirname + '/breakout.ejs'), {me: 'Bad request.', req_ret: ''});
    	  });
    }
 });
@@ -59,7 +59,7 @@ app.get('/', function (req, res) {
    if (req.session.token)
    	res.redirect('/request');
    else
-   	res.render(path.join(__dirname + '/index.ejs'));
+   	res.render(path.join(__dirname + '/breakout.ejs'));
 });
 
 app.listen(3000);
