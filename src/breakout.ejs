@@ -30,6 +30,7 @@
     var brickOffsetTop = 30;
     var brickOffsetLeft = 30;
     var score = 0;
+    var games_won = 0;
     var lives = 3;
 
     var bricks = [];
@@ -77,6 +78,7 @@
                         score++;
                         if(score == brickRowCount*brickColumnCount) {
                             alert("YOU WIN, CONGRATS!");
+                            games_won++;
                             document.location.reload();
                         }
                     }
